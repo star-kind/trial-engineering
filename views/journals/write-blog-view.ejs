@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing Journal</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/stylesheets/journal/write-article.css" />
+
+</head>
+
+<body>
+  <div class="include-large-div">
+    <div class="there-div">
+      <div class="link-route-div link-container">
+        <div class="link-back-div">
+          <li class="li-link-item left-side">
+            <a href="http://localhost:3100/journals">Article Tabulation</a>
+          </li>
+          <li class="li-link-item right-side">
+            <a class="exploed-user-name-class" id="exploed-user-name-id"></a>
+          </li>
+        </div>
+      </div>
+      <div class="hint-div">
+        <p class="hint-word" id="id-hint-word"></p>
+      </div>
+      <div class="form-div">
+        <form id="submit-essay">
+
+          <div class="compose-div conceal">
+            <div class="compose-div-label contrary-item">
+              <label for="title" class="label-for-input compress-label">Title：
+              </label>
+            </div>
+
+            <div class="comprise-input contrary-item">
+              <input type="text" id="title" class="input-area compute-label" name="essay_title"
+                placeholder="Please enter the title." required="">
+            </div>
+          </div>
+
+          <div class="compose-div contest-carry">
+            <div class="compose-div-label continuity-item">
+              <label for="content" class="label-for-input">Content：
+              </label>
+            </div>
+
+            <div class="complicated-div continuity-item">
+              <textarea id="content" class="input-area" name="essay_content" rows="20" cols="50"
+                placeholder="Please enter the article content. (ctrl + enter can be submitted it)" required=""
+                onkeydown="handleKeyDown(event)"></textarea>
+            </div>
+          </div>
+
+          <div class="btn-submit-note">
+            <input id='submit-btn-id' type="button" value="Submit" id='reset-btn-id' onclick="click2Submit()">
+            <input id='reset-btn-id' type="button" value="Reset">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script src="/javascripts/journals/write-article.js"></script>
+<script src="/javascripts/universal/exhibition-username.js"></script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Journal</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/stylesheets/journal/article-view-page.css" />
+</head>
+
+<body>
+  <div class="large-div-element">
+    <div class="infor-div">
+      <p class="hint-word"></p>
+    </div>
+    <div class="container-div">
+      <div class="content-area-container-div">
+        <div class="user-name-container-div">
+          <span>Author: <span class="exploed-user-name-class"></span></span>
+        </div>
+        <div class="title-row">
+          <label for="title">Title:</label>
+          <div class="input-container">
+            <input type="text" id="title" class="only-reads" readonly="readonly" value="Web">
+          </div>
+        </div>
+        <div class="content-row">
+          <label for="articleContent">Content:</label>
+          <div class="input-container">
+            <textarea rows="20" cols="10" class="only-reads" id="articleContent"
+              placeholder="please input content that your want. press ctrl + enter can be submitted it."
+              onkeydown="handleKeyDown2Save(event)" readonly="readonly"></textarea>
+          </div>
+        </div>
+        <div id="editable-buttons" class="btns-div">
+          <button id="editButton">Edit</button>
+          <button id="saveButton">Save</button>
+          <button id="cancelButton">Cancel</button>
+          <button id="returnButton">BlogList</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script src="/javascripts/journals/article-view-page.js"></script>
+<script src="/javascripts/universal/exhibition-username.js"></script>

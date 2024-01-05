@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LOGIN</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/stylesheets/account/adapter-style.css" />
+  <script src="/javascripts/account/logining.js"></script>
+</head>
+
+<body>
+  <div class="total-container-item">
+    <div class="addr-total">
+      <div class="address-url">
+        <span><a href="/account-register-component">No account? Register here</a></span>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="msg-div">
+        <p class="msg-p-word"></p>
+      </div>
+
+      <form id="login-form" class="parameter-form">
+        <h2>Sign In Your Account</h2>
+        <label for="id-email">Email</label>
+        <input type="email" name="email" placeholder="User's email address" required value="" id="id-email" />
+        <br />
+        <label for="id-password">Password</label>
+        <input id="id-password" type="password" name="password" placeholder="Enter your password" required value=""
+          onkeypress="handleKeyPress(event)" />
+        <button type="button" id="login-btn">LOGIN</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

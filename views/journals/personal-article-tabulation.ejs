@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Personal Journal List</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/stylesheets/journal/personal-article-tabulation.css" />
+</head>
+
+<body>
+
+  <div class="contrary-class-container">
+
+    <div class="addr-total">
+      <div class="address-url">
+        <span><a href="/links-router">Route</a></span>
+      </div>
+      <div class="address-url">
+        <span><a href="/">Homepage</a></span>
+      </div>
+      <div class="address-url">
+        <span> <a href="/journals-write-essay">Create article</a> </span>
+      </div>
+      <div class="address-url">
+        <span><a class="exploed-user-name-class" id="account-name-id"></a></span>
+      </div>
+    </div>
+
+
+
+    <div class="personal-container">
+
+      <div class="articles-div-0">
+        <div class="search-div">
+          <input type="text" name="article_name" id="search-blog-by-name" placeholder="Please enter the article name"
+            onkeydown="if (event.keyCode === 13) {click2SearchByTitle();}" />
+          <button type="button" id="search-blog-name-btn" onclick="click2SearchByTitle()">
+            Search
+          </button>
+        </div>
+        <div class="essay-page-div">
+          <span class="total-page-span">Total Page:<span id="total-essay-page"> </span></span>
+          <span class="curr-page-span">Current Page:<span id="current-essay-page"> </span></span>
+        </div>
+        <div class="hint-msg-div">
+          <p class="hint-word"></p>
+        </div>
+        <div class="tbl-div">
+          <table id="myTable">
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" id="selectAll" onclick="selectAllRows()" />
+                </th>
+                <th class="article-treat">ID</th>
+                <th class="article-treat">Account Email</th>
+                <th class="article-treat">Article</th>
+                <th>Title</th>
+                <th class="article-treat">Account ID</th>
+                <th>Modified Time</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <button onclick="goToPrevious()">Previous</button>
+          <input type="number" id="pageInput" class="page-input-jump" placeholder="Enter number and jump"
+            onkeydown="if(event.keyCode==13) goToPage(this.value)" required />
+          <button onclick="goToNext()">Next</button>
+        </div>
+        <div class="btn-div-1">
+          <button class="btn-1" onclick="click2DeleteNotes()">
+            Delete Article
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+<script src="/javascripts/journals/personal-article-tabulation.js"></script>
+<script src="/javascripts/journals/article-tabulation-navigation.js"></script>
+<script src="/javascripts/journals/article-tabulation-hint.js"></script>
+<script src="/javascripts/journals/article-tabulation-init-title.js"></script>
+<script src="/javascripts/journals/personal-article-search.js"></script>
+<script src="/javascripts/journals/personal-article-delete.js"></script>
+<script src="/javascripts/universal/exhibition-username.js"></script>

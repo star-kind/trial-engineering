@@ -1,0 +1,26 @@
+#tag-div-0 {
+  /* 定义外边距 */
+  margin: 1vw;
+  /* 定义边框圆角 */
+  border-radius: 0.1vw;
+  /* 定义内边距 */
+  padding: 1vw;
+}
+
+#current-user-name-tag {
+  /* 定义字体样式 */
+  font-family: Arial, sans-serif;
+  /* 定义字体大小 */
+  font-size: 1rem;
+  /* 定义字体颜色 */
+  color: #333;
+  /* 定义行高 */
+  line-height: 1.5;
+  /* 定义文本对齐方式 */
+  text-align: center;
+  /* 定义定位方式 */
+  position: absolute;
+  /* 定义距离页面顶部和左边的距离 */
+  top: 0;
+  right: 5em;
+}

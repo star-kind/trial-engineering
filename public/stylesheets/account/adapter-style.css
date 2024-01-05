@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  transform: translate(0, 0em);
+  font-size: 1em;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 2vw;
+  background-color: #fff;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+  border-radius: 1vw;
+  transform: translate(0, 5vh);
+}
+
+.parameter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parameter-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.parameter-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.parameter-form button {
+  padding: 1vw;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 1vw;
+  cursor: pointer;
+  width: 50%;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-top: 2%;
+}
+
+.parameter-form button:hover {
+  background-color: #45a049;
+}
+
+.address-url {
+  margin: 0.5em 0;
+}
+
+.addr-total {
+  margin: 1em 0 0 0;
+}
+
+form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  height: 2rem;
+  font-size: 1rem;
+  margin-left: 3%;
+}
+
+.msg-div {
+  text-align: center;
+}
+
+.msg-div p {
+  font-weight: bolder;
+  font-size: 1rem;
+  color: #44a650;
+  margin: 0;
+}
+
+/*  */
+
+/* 导航栏整体样式 */
+.addr-total {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 1vw 0;
+  box-shadow: 0 0.1vw 0.1vw rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -1vw;
+}
+
+/* 导航链接样式 */
+.address-url a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* 鼠标悬停效果 */
+.address-url a:hover {
+  color: #ddd;
+}
+
+/* 为每个地址URL添加一点内边距 */
+.address-url span {
+  padding: 0 1vw;
+}

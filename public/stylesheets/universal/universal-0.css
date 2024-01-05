@@ -1,0 +1,41 @@
+/* 样式重置 */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 定义样式 */
+.link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 垂直居中 */
+}
+
+/* 隐藏 li 标签的圆点 */
+.link-list li {
+  list-style: none;
+}
+
+/* 链接样式 */
+.link-list a {
+  display: block;
+  padding: 1vw 0;
+  /* 调整链接的垂直间距 */
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* 鼠标悬停时的样式 */
+.link-list a:hover {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.links-div {
+  transform: translate(0, 5em);
+}

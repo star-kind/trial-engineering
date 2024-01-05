@@ -1,0 +1,29 @@
+/* 导航栏整体样式 */
+.addr-total {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1vw 0;
+    box-shadow: 0 0.1vw 0.1vw rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* 导航链接样式 */
+.address-url a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+/* 鼠标悬停效果 */
+.address-url a:hover {
+    color: #ddd;
+}
+
+/* 为每个地址URL添加一点内边距 */
+.address-url span {
+    padding: 0 1vw;
+}

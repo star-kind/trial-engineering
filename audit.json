@@ -1,0 +1,61 @@
+{
+    "keepSettings": {
+        "type": 2,
+        "amount": 10
+    },
+    "auditFilename": "audit.json",
+    "hashType": "md5",
+    "extension": "",
+    "files": [
+        {
+            "date": 1703265345984,
+            "name": "/home/user/workspaces/trial-engineering/logs/Access-20231223.log",
+            "hash": "af0f4c8b074d8cb6dd85c43c869b95b5"
+        },
+        {
+            "date": 1703347547292,
+            "name": "/home/user/workspaces/trial-engineering/logs/Access-20231224.log",
+            "hash": "6d9df0044d7ca8521d3a8f6138a97e22"
+        },
+        {
+            "date": 1703536609872,
+            "name": "/home/user/workspaces/trial-engineering/logs/Access-20231225.log",
+            "hash": "1a0157a51dbcd338ff5bd1ecbe195d16"
+        },
+        {
+            "date": 1703568117066,
+            "name": "/home/user/workspaces/trial-engineering/logs/Access-20231226.log",
+            "hash": "552c4ef9b510e7a363202ffadff78721"
+        },
+        {
+            "date": 1703609002950,
+            "name": "/home/user/workspaces/trial-engineering/logs/Access-20231227.log",
+            "hash": "4cd92e08bc4a2770b4ca211572f8819b"
+        },
+        {
+            "date": 1703699177478,
+            "name": "/home/user/workspaces/trial-engineering/logs/Access-20231228.log",
+            "hash": "3ad1f0e6783118999c0f11f0b99ebddb"
+        },
+        {
+            "date": 1703908433616,
+            "name": "/home/user/workspaces/trial-engineering/logs/Access-20231230.log",
+            "hash": "8d4b1ff4671d977adbaff8a6c1893451"
+        },
+        {
+            "date": 1704196940397,
+            "name": "/home/user/workspaces/trial-engineering/logs/Access-20240102.log",
+            "hash": "f6b968c7ab49b4561d3299bcb225a871"
+        },
+        {
+            "date": 1704520825139,
+            "name": "/home/user/workspaces/trial-engineering/logs/Access-20240106.log",
+            "hash": "948a050542309bd66ec3399626eed58c"
+        },
+        {
+            "date": 1704484952121,
+            "name": "/home/user/workspaces/trial-engineering/logs/Access-20240105.log",
+            "hash": "5a22baa6a75352a9bf8bd2103715eda7"
+        }
+    ]
+}

@@ -1,0 +1,279 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1vw;
+}
+
+th,
+tr,
+td {
+  border: 0.1vw solid #ddd;
+  padding: 1vw;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* 隐藏 li 标签的圆点 */
+li {
+  list-style: none;
+}
+
+.article-treat {
+  display: none;
+}
+
+.title-item {
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 1vw 0;
+}
+
+.pagination button {
+  margin: 0 2em;
+  padding: 0.5vw 1vw;
+  border: none;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #bbb;
+}
+
+.pagination button:active {
+  background-color: #aaa;
+}
+
+.page-input-jump {
+  width: 15em;
+}
+
+/* delete button */
+.btn-div-1 {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #f2f2f2;
+  padding: 1vw;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-1 {
+  transform: translate(45vw, 0);
+  padding: 1vw 1.5vw;
+  background-color: #cc0000;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 1vw;
+  border: 0 solid #fff;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+  background-color: #b70000;
+  color: #fff;
+}
+
+.link-route-div {
+  position: relative;
+}
+
+.link-route-div li {
+  float: left;
+  list-style: none;
+  margin-right: 2em;
+  /* 设置右边距 */
+}
+
+.link-route-div li a {
+  text-decoration: none;
+  /* 去掉链接下划线 */
+  color: #333;
+  /* 设置字体颜色 */
+  font-family: Arial, sans-serif;
+  /* 设置字体 */
+}
+
+.link-route-div li:last-child {
+  margin-right: 0;
+  /* 去掉最后一个li元素的右边距 */
+}
+
+/* 添加以下CSS代码，将li元素定位到页面右上角 */
+.link-route-div {
+  position: fixed;
+  top: 1em;
+  right: 1.3rem;
+}
+
+/* *** */
+/* 定义 .essay-page-div 的样式 */
+.essay-page-div {
+  background-color: #f9f9f9;
+  /* 背景颜色 */
+  padding: 1vw;
+  /* 内边距 */
+  border-radius: 0.2vw;
+  /* 圆角 */
+  margin: 2em 0;
+  /* 外边距 */
+  text-align: center;
+}
+
+/* 定义 span 元素的样式 */
+.essay-page-div>span {
+  font-weight: bold;
+  /* 字体加粗 */
+  color: #333;
+  /* 字体颜色 */
+  margin: 0 1em;
+}
+
+/* 定义 id 为 total-essay-page 的 span 元素的样式 */
+#total-essay-page {
+  font-size: 1rem;
+  /* 字体大小 */
+}
+
+/* 定义 id 为 current-essay-page 的 span 元素的样式 */
+#current-essay-page {
+  font-size: 1rem;
+  /* 字体大小 */
+  color: #ff0000;
+  /* 字体颜色 */
+}
+
+/* ************ */
+.search-div {
+  width: 30em;
+  /* 设置宽度 */
+  height: 3vw;
+  /* 设置高度 */
+  background-color: #f2f2f2;
+  /* 设置背景颜色 */
+  border-radius: 0.5vw;
+  /* 设置圆角 */
+  margin: 0 auto;
+  /* 居中显示 */
+  display: flex;
+  /* 使用flex布局 */
+  align-items: center;
+  /* 垂直居中 */
+  justify-content: center;
+  /* 水平居中 */
+}
+
+#search-blog-by-name {
+  width: 80%;
+  /* 设置宽度 */
+  height: 100%;
+  /* 设置高度 */
+  padding: 0 1vw;
+  /* 设置内边距 */
+  border: none;
+  /* 去掉边框 */
+  outline: none;
+  /* 去掉轮廓线 */
+  font-size: 1rem;
+  /* 设置字体大小 */
+}
+
+#search-blog-name-btn {
+  width: 20%;
+  /* 设置宽度 */
+  height: 100%;
+  /* 设置高度 */
+  border: none;
+  /* 去掉边框 */
+  background-color: #4caf50;
+  /* 设置背景颜色 */
+  color: white;
+  /* 设置字体颜色 */
+  font-size: 1rem;
+  /* 设置字体大小 */
+  cursor: pointer;
+  /* 鼠标悬停时变为手形图标 */
+}
+
+#search-blog-name-btn:hover {
+  background-color: #45a049;
+  /* 鼠标悬停时的背景颜色 */
+}
+
+/* *** */
+
+.hint-msg-div {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #c50a0a;
+}
+
+/* ****** */
+
+.articles-div-0 {
+  transform: translate(0, 4rem);
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 导航栏整体样式 */
+.addr-total {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 1vw 0;
+  box-shadow: 0 0.1vw 0.1vw rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* 导航链接样式 */
+.address-url a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+/* 鼠标悬停效果 */
+.address-url a:hover {
+  color: #ddd;
+}
+
+/* 为每个地址URL添加一点内边距 */
+.address-url span {
+  padding: 0 1vw;
+}

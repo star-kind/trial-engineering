@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Renewal Mailbox</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/stylesheets/account/adapter-style.css" />
+  <link rel="stylesheet" href="/stylesheets/universal/universal-1.css" />
+  <link rel="stylesheet" href="/stylesheets/account/modified-mail.css" />
+</head>
+
+<body>
+  <div class="total-container-0">
+
+    <div class="addr-total">
+      <div class="address-url">
+        <span><a href="/links-router">Links route</a></span>
+      </div>
+      <div class="address-url">
+        <span><a href="/">Homepage</a></span>
+      </div>
+      <div class="address-url">
+        <span><a href="/account-amend-password">Revise password</a></span>
+      </div>
+      <div class="address-url">
+        <span><a id="current-user-name"></a></span>
+      </div>
+    </div>
+
+    <div id="response-information-div">
+      <p id="response-information-tag"></p>
+    </div>
+    <div class="container">
+      <form id="renewal-mailbox-form" class="parameter-form">
+        <h2>Replace Your Mailbox</h2>
+        <label for="new_email">New Mailbox</label>
+        <input type="email" name="new_email" id="new_email" placeholder="Enter your new email address" required />
+        <br />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Replacing mailbox requires enter password"
+          required onkeypress="handleKeyPress(event)" />
+        <button type="button" id="renewal-mailbox-btn">Confirm</button>
+      </form>
+
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="/javascripts/account/ModifyEmail.js"></script>

@@ -1,0 +1,131 @@
+body {
+  height: 145vh;
+}
+
+.large-div-element {
+  height: 100%;
+}
+
+/* 容器样式 */
+.container-div {
+  /* 背景色 */
+  background-color: #f0f0f0;
+  /* 浅灰色背景 */
+  /* 边框样式 */
+  border: 0 solid #333;
+  /* 黑色边框，宽度为3px */
+  /* 边框圆角 */
+  border-radius: 1vw;
+  /* 圆角边框 */
+  /* 边框阴影 */
+  box-shadow: 0 1vw 1vw rgba(0, 0, 0, 0.1);
+  /* 轻微的阴影效果 */
+  /* 内边距 */
+  padding: 2vw;
+  /* 根据需要调整内边距 */
+  /* 文字颜色 */
+  color: #333;
+  /* 深灰色文字 */
+  width: 80%;
+  height: 75%;
+  position: relative;
+  left: 8%;
+  top: 4%;
+  font-family: Arial;
+}
+
+/* 标签样式 */
+.title-row label,
+.content-row label {
+  display: block;
+  margin-bottom: 1vw;
+  font-weight: bold;
+}
+
+/* 输入框和文本域样式 */
+.input-container input[type="text"],
+.input-container textarea {
+  width: 100%;
+  padding: 1vw;
+  border: 0.1vw solid #ccc;
+  border-radius: 1vw;
+  box-sizing: border-box;
+  resize: vertical;
+  /* 仅适用于 textarea，允许垂直拖动调整大小 */
+  margin-bottom: 1vw;
+}
+
+/* 按钮样式 */
+#editable-buttons button {
+  margin-right: 1vw;
+  padding: 1vw 1vw;
+  border: none;
+  border-radius: 1vw;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  width: 15vh;
+  font-weight: 700;
+}
+
+#editable-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.content-row {
+  margin: 1em 0;
+}
+
+.infor-div,
+.btns-div {
+  text-align: center;
+}
+
+textarea,
+.input-container {
+  font-size: 1rem;
+}
+
+.infor-div p {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: #31ab82;
+  font-family: Arial;
+}
+
+.infor-div {
+  transform: translate(0, 2rem);
+}
+
+/* ****** */
+
+.user-name-container-div {
+  position: relative;
+  width: 80%;
+  margin: 1vw 0;
+  font-size: 1rem;
+  font-weight: bolder;
+  bottom: 1vw;
+}
+
+.exploed-user-name-class {
+  /* 设置字体样式等其他属性 */
+  font-size: 1em;
+  color: #000;
+  text-align: center;
+  font-family: Arial;
+}
+
+/*  */
+.cls-message-span-div {
+  text-align: center;
+  color: #f13674;
+  font-size: 1.3vw;
+}
+
+/*  */
+
+#saveButton,
+#cancelButton {
+  display: none;
+}

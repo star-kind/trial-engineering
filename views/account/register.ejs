@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Register</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/stylesheets/account/adapter-style.css" />
+  <script src="/javascripts/account/register.js"></script>
+</head>
+
+<body>
+  <div class="contrast-total">
+
+    <div class="addr-total">
+      <div class="address-url">
+        <span><a href="/">Already Have account? Login here</a></span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="msg-div">
+        <p class="msg-p-word"></p>
+      </div>
+      <form class="parameter-form" id="register-form">
+        <h2>Sign Up</h2>
+        <label for="id-user_email">User Email</label>
+        <input type="email" name="user_email" placeholder="User's email address" required value="" id="id-user_email" />
+        <br />
+        <label for="id-password">Password</label>
+        <input type="password" name="password" placeholder="Please enter password" required value="" id="id-password" />
+        <br />
+        <label for="id-repeat_password">Repeat Password</label>
+        <input type="password" name="repeat_password" placeholder="Please enter password again" required value=""
+          id="id-repeat_password" onkeypress="handleKeyPress(event)" />
+        <button type="button" id="register-btn">Register</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>
